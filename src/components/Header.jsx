@@ -1,4 +1,5 @@
 import './Header.scss';
+import Button from 'react-bootstrap/Button'; // react用bootstrap（ボタンコンポーネント）をインポート
 import { useState } from 'react';
 export default () => {
   let [pageTitle, setTitlr] = useState('KuroNeko');
