@@ -1,5 +1,23 @@
 $mainFontFamily: 'Montserrat Variable', sans-serif;
 
-h1 {
+.header {
   font-family: $mainFontFamily;
+
+  &__inner {
+  }
+
+  &__ttl {
+  }
+
+  h1::after {
+    content: '';
+    @function image() {
+      @return random(5);
+    }
+    background-image: url('../assets/' + image() + '.svg');
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    vertical-align: text-bottom;
+  }
 }
