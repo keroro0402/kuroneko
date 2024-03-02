@@ -1,3 +1,5 @@
-p {
-  color: red;
+$mainFontFamily: 'Montserrat Variable', sans-serif;
+
+h1 {
+  font-family: $mainFontFamily;
 }
