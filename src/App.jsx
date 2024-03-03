@@ -1,10 +1,12 @@
 import Header from './components/Header';
 import Nav from './components/Nav';
+import { useState } from 'react';
 function App() {
+  let [pageTitle, setTitlr] = useState('KuroNeko');
   return (
     <>
-      <Header />
-      <Nav title='ナビ' />
+      <Header props={{ title1: pageTitle }} />
+      <Nav props={{ title1: pageTitle }} />
     </>
   );
 }
