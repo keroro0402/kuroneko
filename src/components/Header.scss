@@ -1,9 +1,14 @@
 $mainFontFamily: 'Montserrat Variable', sans-serif;
+$defaultBorderStyle: 1px dotted grey;
+$defaultXSpaceVal: 1rem;
+$defaultYSpaceVal: 1rem;
 
 .header {
   font-family: $mainFontFamily;
 
   &__inner {
+    border: $defaultBorderStyle;
+    padding: $defaultYSpaceVal;
   }
 
   &__ttl::before {
