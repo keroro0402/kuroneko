@@ -1,13 +1,10 @@
 import './Header.scss';
-import Button from 'react-bootstrap/Button'; // react用bootstrap（ボタンコンポーネント）をインポート
-import { useState } from 'react';
-export default () => {
-  let [pageTitle, setTitlr] = useState('KuroNeko');
+export default ({ props }) => {
   return (
     <>
       <header className='py-4 header'>
         <div className='container text-center header__inner'>
-          <h1 className='header__ttl'>{pageTitle}</h1>
+          <h1 className='header__ttl'>{props.title1}</h1>
         </div>
       </header>
     </>
