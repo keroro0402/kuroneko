@@ -6,10 +6,20 @@ $mainFontFamily: 'Montserrat Variable', sans-serif;
   &__inner {
   }
 
-  &__ttl {
+  &__ttl::before {
+    content: '';
+    @function image() {
+      @return random(5);
+    }
+    background-image: url('../assets/' + image() + '.svg');
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    vertical-align: text-bottom;
+    transform: scale(-1, 1);
   }
 
-  h1::after {
+  &__ttl::after {
     content: '';
     @function image() {
       @return random(5);
