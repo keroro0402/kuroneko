@@ -1,0 +1,28 @@
+$defaultLinkColor: #ffffff;
+
+.footer {
+  p {
+    a:hover {
+      text-decoration: none;
+      color: $defaultLinkColor;
+    }
+  }
+  a {
+    color: $defaultLinkColor;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $defaultLinkColor;
+  }
+
+  &__ttl {
+    color: $defaultLinkColor;
+    font-size: 1.3rem;
+  }
+}
+
+.nav {
+  display: inline-flex;
+}
